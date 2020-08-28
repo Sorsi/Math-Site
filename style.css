@@ -26,6 +26,9 @@ h1 a {
 #search-box {
     float: right;
     background: linear-gradient(#fdface, #ffee04);
+    background: -webkit-linear-gradient(#fdface, #ffee04);
+    background: -o-linear-gradient(#fdface, #ffee04);
+    background: -moz-linear-gradient(#fdface, #ffee04);
     width: 420px;
     height: 48px;
     padding: 18px 18px 0 18px;
@@ -57,6 +60,9 @@ h1 a {
 #menu {
     height: 72px;
     background: linear-gradient(#fffabb, #ffee04);
+    background: -webkit-linear-gradient(#fffabb, #ffee04);
+    background: -o-linear-gradient(#fffabb, #ffee04);
+    background: -moz-linear-gradient(#fffabb, #ffee04);
     padding: 12px 0;
 }
 
@@ -154,4 +160,14 @@ ul {
     text-decoration: none;
     font-size: larger;
     font-weight: bold;
+}
+
+.footer {
+    height: 60px;
+    background: linear-gradient(#fffabb, #ffee04);
+    background: -webkit-linear-gradient(#fffabb, #ffee04);
+    background: -o-linear-gradient(#fffabb, #ffee04);
+    background: -moz-linear-gradient(#fffabb, #ffee04);
+    padding: 18px 30px;
+    margin-top: 18px;
 }
