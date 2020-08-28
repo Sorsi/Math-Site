@@ -1,0 +1,136 @@
+body {
+    font-family: 'Varela', sans-serif;
+}
+
+#container {
+    width: 1600px;
+    margin: 0 auto; /* centered in the page */
+}
+
+#header {
+    height: 100px;
+    padding: 12px 0;
+}
+
+#brand {
+    float: left;
+}
+
+h1 a {
+    font-size: 54px;
+    font-weight: 120;
+    color: #FF1D58;
+    text-decoration: none; /* no underline on the link */
+}
+
+#search-box {
+    float: right;
+    background: linear-gradient(#fdface, #ffee04);
+    width: 420px;
+    height: 48px;
+    padding: 18px 18px 0 18px;
+    margin-top: 18px;
+}
+
+.text-input {
+    float: left;
+    width: 200px;
+    padding: 6px;
+    font-size: 18px;
+    color: #FF1D58;
+    background: white url(images/search.png) right center no-repeat;
+}
+
+.submit-btn {
+    float: right;
+    color: mintcream;
+    background-color: #F75990;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu {
+    height: 72px;
+    background: linear-gradient(#fffabb, #ffee04);
+    padding: 12px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+#menu ul li {
+    float: left;
+    padding: 0 30px;
+    height: 30px;
+    border-right: 3px solid #FF1D58;
+}
+
+#menu ul li:last-child {
+    border-right: none;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #FF1D58;
+    font-weight: 700;
+    line-height: 30px;
+    -webkit-transition: font-size 0.5s ease;
+    -moz-transition: font-size 0.5s ease;
+    -o-transition: font-size 0.5s ease;
+    -ms-transition: font-size 0.5s ease;
+    transition: font-size 0.5s ease;
+}
+
+#menu ul li a:hover, #menu ul li a.active {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#introduction {
+    padding: 30px;
+    margin: 18px 0;
+}
+
+#introduction h3 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+#introduction p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.sidebar {
+    height: 480px;
+    width: 720px;
+    border: 2px solid #eeeeee;
+    border-radius: 18px;
+    padding: 12px 30px;
+}
+
+.sidebar h3 {
+    font-size: 30px;
+}
+
+#left-sidebar {
+    float: left;
+}
+
+#right-sidebar {
+    float: right;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #FF1D58;
+}
