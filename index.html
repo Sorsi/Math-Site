@@ -4,16 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>Maths Site</title>
+    <!-- TODO change href because of deploy href="/MathsWebsite/style.css" -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <link rel="stylesheet" href="/MathsWebsite/style.css">
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela&display=swap">
 </head>
 
 <body>
     <div id="container">
         <div id="header">
             <div id="brand">
-                <h1><a href="#">Maths the Fun way.</a></h1>
+                <h1><a href="#">Maths the Fun way</a></h1>
             </div>
             <div id="search-box">
                 <form action="/" method="get">
@@ -25,13 +26,11 @@
         </div>
 
         <div id="menu">
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Online Tutorials</a></li>
-                <li><a href="#">Get a private tutor</a></li>
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+            <a href="#" class="active">Home</a>
+            <a href="#">Online Tutorials</a>
+            <a href="#">Get a private tutor</a>
+            <a href="#">Sign Up</a>
+            <a href="#">Contact Us</a>
         </div>
 
         <div id="introduction">
@@ -42,41 +41,48 @@
             </p>
         </div>
 
-        <div id="left-sidebar" class="sidebar">
-            <h3>Go to:</h3>
-            <ul>
-                <li><a href="#">Year 1 Free Lessons</a></li>
-                <li><a href="#">Year 2 Free Lessons</a></li>
-                <li><a href="#">Year 3 Free Lessons</a></li>
-                <li><a href="#">Year 4 Free Lessons</a></li>
-                <li><a href="#">Year 5 Free Lessons</a></li>
-                <li><a href="#">Year 6 Free Lessons</a></li>
-                <li><a href="#">Year 7 Free Lessons</a></li>
-                <li><a href="#">Year 8 Free Lessons</a></li>
-                <li><a href="#">Year 9 Free Lessons</a></li>
-                <li><a href="#">Year 10 Free Lessons</a></li>
-                <li><a href="#">Year 11 Free Lessons</a></li>
-                <li><a href="#">Year 12 Free Lessons</a></li>
-            </ul>
+        <div class="sidebars">
+            <div class="sidebar-wrapper">
+                <div id="left-sidebar" class="sidebar">
+                    <h3>Go to:</h3>
+                    <ul>
+                        <li><a href="#">Year 1 Free Lessons</a></li>
+                        <li><a href="#">Year 2 Free Lessons</a></li>
+                        <li><a href="#">Year 3 Free Lessons</a></li>
+                        <li><a href="#">Year 4 Free Lessons</a></li>
+                        <li><a href="#">Year 5 Free Lessons</a></li>
+                        <li><a href="#">Year 6 Free Lessons</a></li>
+                        <li><a href="#">Year 7 Free Lessons</a></li>
+                        <li><a href="#">Year 8 Free Lessons</a></li>
+                        <li><a href="#">Year 9 Free Lessons</a></li>
+                        <li><a href="#">Year 10 Free Lessons</a></li>
+                        <li><a href="#">Year 11 Free Lessons</a></li>
+                        <li><a href="#">Year 12 Free Lessons</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar-wrapper">
+                <div id="right-sidebar" class="sidebar">
+                    <h3>Why us?</h3>
+                    <ul>
+                        <li><a href="#">Our teachers are available any time</a></li>
+                        <li><a href="#">Available on laptop, tablets and phones</a></li>
+                        <li><a href="#">30 Days Money Back Guarantee</a></li>
+                        <li><a href="#">Interactive games for an enjoyable learning experience</a></li>
+                        <li><a href="#">Learn at your own pace</a></li>
+                        <li><a href="#">Complete curriculum</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div id="right-sidebar" class="sidebar">
-            <h3>Why us?</h3>
-            <ul>
-                <li><a href="#">Our teachers are available any time</a></li>
-                <li><a href="#">Available on laptop, tablets and phones</a></li>
-                <li><a href="#">30 Days Money Back Guarantee</a></li>
-                <li><a href="#">Interactive games for an enjoyable learning experience</a></li>
-                <li><a href="#">Learn at your own pace</a></li>
-                <li><a href="#">Complete curriculum</a></li>
-            </ul>
-        </div>
         <div class="clear"></div>
-            <footer class="footer">
-                <div>
-                    <p>Company name. Copyright &copy; 2015-2020.</p>
-                </div>
-            </footer>
+
+        <footer class="footer">
+            <div>
+                <p>Company name. Copyright &copy; 2015-2020.</p>
+            </div>
+        </footer>
     </div>
 </body>
 

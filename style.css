@@ -1,19 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Varela', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 #container {
-    width: 1600px;
+    width: 90%;
     margin: 0 auto; /* centered in the page */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 #header {
-    height: 100px;
-    padding: 12px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #brand {
-    float: left;
+    flex: 50%;
 }
 
 h1 a {
@@ -24,15 +34,16 @@ h1 a {
 }
 
 #search-box {
-    float: right;
+    flex: 50%;
     background: linear-gradient(#fdface, #ffee04);
     background: -webkit-linear-gradient(#fdface, #ffee04);
     background: -o-linear-gradient(#fdface, #ffee04);
     background: -moz-linear-gradient(#fdface, #ffee04);
-    width: 420px;
-    height: 48px;
-    padding: 18px 18px 0 18px;
-    margin-top: 18px;
+    min-width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-input {
@@ -58,30 +69,30 @@ h1 a {
 }
 
 #menu {
-    height: 72px;
     background: linear-gradient(#fffabb, #ffee04);
     background: -webkit-linear-gradient(#fffabb, #ffee04);
     background: -o-linear-gradient(#fffabb, #ffee04);
     background: -moz-linear-gradient(#fffabb, #ffee04);
-    padding: 12px 0;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 ul {
     list-style: none;
 }
 
-#menu ul li {
-    float: left;
+#menu a {
     padding: 0 30px;
     height: 30px;
     border-right: 3px solid #FF1D58;
 }
 
-#menu ul li:last-child {
+#menu a:last-child {
     border-right: none;
 }
 
-#menu ul li a {
+#menu a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
@@ -95,9 +106,20 @@ ul {
     transition: font-size 0.5s ease;
 }
 
-#menu ul li a:hover, #menu ul li a.active {
+#menu a:hover, #menu a.active {
     font-size: 24px;
     font-weight: 900;
+}
+
+/* small screens: vertical menu */
+@media screen and (max-width: 700px) {
+    #menu {
+        flex-direction: column;
+        align-content: center;
+    }
+    #menu a {
+        border-right: none;
+    }
 }
 
 #introduction {
@@ -115,24 +137,27 @@ ul {
     text-align: justify;
 }
 
+/* sidebars */
+.sidebars {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar-wrapper {
+    padding: 10px;
+    flex: 50%;
+}
+
 .sidebar {
-    height: 540px;
-    width: 720px;
+    height: 100%;
     border: 2px solid #eeeeee;
     border-radius: 18px;
     padding: 12px 30px;
+    flex: 50%;
 }
 
 .sidebar h3 {
     font-size: 30px;
-}
-
-#left-sidebar {
-    float: left;
-}
-
-#right-sidebar {
-    float: right;
 }
 
 #left-sidebar ul li {
@@ -169,5 +194,5 @@ ul {
     background: -o-linear-gradient(#fffabb, #ffee04);
     background: -moz-linear-gradient(#fffabb, #ffee04);
     padding: 18px 30px;
-    margin-top: 18px;
+    margin-top: auto; /* push item to the bottom of the webpage all the time */
 }
